@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+
+#app {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  min-height: 600px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 40px 20px;
+  overflow: hidden;
+  border-radius: 50px;
+  background-image: linear-gradient(to left, #a7c7e7, #edeade);
+}
+
+#searchBar {
+  display: flex;
+  padding: 0px 10%;
+  margin-bottom: 30px;
+}
+
+#searchInput {
+  background-color: none;
+  border: none;
+  outline: none;
+  width: 90%;
+  background: transparent;
+  color: #333;
+  border-bottom: solid 1px lightblue;
+}
+
+input::placeholder {
+  color: #333;
+  opacity: 0.8;
+}
+
+#info {
+  line-height: 0.5rem;
+  color: #333;
+}
+
+#info h4 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 0.6em;
+}
+
+#description {
+  text-transform: capitalize;
+  color: #333;
+}
+
+#temp {
+  color: #333;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+#searchIcon {
+  border: none;
+  background: transparent;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+#extraInfo {
+  position: absolute;
+  top: 330px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: #333;
+}
+
+#extraInfo h5 {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #app {
+    width: 95%;
+    padding: 30px 10px;
+    margin: 10px auto;
+    border-radius: 50px;
+  }
+
+  #info h4 {
+    font-size: 32px;
+  }
+
+  #temp {
+    font-size: 26px;
+  }
+
+  #extraInfo {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    position: relative;
+    top: 30px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-height: 600px) {
+  #app {
+    position: relative;
+    top: 0;
+    margin: 10px auto;
+    min-height: auto;
+    padding: 20px 10px;
+  }
+
+  #extraInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: 10px;
+    gap: 8px;
+    padding: 0 15px;
+  }
+}

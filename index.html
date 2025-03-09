@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <script
+      src="https://kit.fontawesome.com/74de10ced3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Search Bar -->
+      <div id="searchBar">
+        <input type="text" id="searchInput" placeholder="Search By City" />
+        <button onclick="getWeather()" id="searchIcon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <!-- Date and City -->
+      <div id="info">
+        <p id="date"></p>
+        <h3 id="city"></h3>
+      </div>
+
+      <!-- Weather Image -->
+      <div id="tempImg"></div>
+
+      <!-- Desc -->
+      <div id="description"></div>
+
+      <!-- Temp -->
+      <div id="temp"></div>
+
+      <!-- Extra  Info -->
+      <div id="extraInfo">
+        <div class="col">
+          <div class="info">
+            <h5>Feels Like</h5>
+            <p id="feels_like"></p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="info">
+            <h5>grnd level</h5>
+            <p id="grnd_level"></p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="info">
+            <h5>humidity</h5>
+            <p id="humidity"></p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="info">
+            <h5>pressure</h5>
+            <p id="pressure"></p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="info">
+            <h5>sea level</h5>
+            <p id="seaLevel"></p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="info">
+            <h5>Temp max</h5>
+            <p id="tempMax"></p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="info">
+            <h5>Temp min</h5>
+            <p id="tempMin"></p>
+          </div>
+        </div>
+
+        <!-- Coords -->
+        <div class="col">
+          <div class="lat">
+            <h5>Lat</h5>
+            <p id="lat"></p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="lon">
+            <h5>Lon</h5>
+            <p id="lon"></p>
+          </div>
+        </div>
+
+        <!-- Wind -->
+        <div class="col">
+          <div class="deg">
+            <h5>Deg</h5>
+            <p id="deg"></p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="speed">
+            <h5>Speed</h5>
+            <p id="speed"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
