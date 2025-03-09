@@ -1,5 +1,3 @@
-//6fc2305d13da145d4e7e781ef438d1e7
-
 const date = document.getElementById("date");
 const city = document.getElementById("city");
 const temp = document.getElementById("temp");
